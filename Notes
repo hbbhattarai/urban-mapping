@@ -1,0 +1,46 @@
+Step 1: Install Anaconda:
+
+Step 2: Clone Project:
+
+git clone https://github.com/hbbhattarai/urban-mapping.git
+
+Step 3: Command Directory:
+
+cd to folder location
+
+Step 4: Creating environments:
+
+conda create --name geo --file requirements.txt
+
+Step 5: Activate geo environment:
+
+conda activate geo
+
+Step 6: Run Jupyter lab:
+
+jupyter lab
+
+Step 7: Excute commands:
+
+Once jupyter lab opens in default browser , open supportVectorMachine.ipynb
+
+
+# Mapping the buildt-up area using the Indices For Landsat 8 OLI
+
+1. Generate_Mask.ipynb
+
+Based on ground truth  it is import to generate mask of urban area. 
+Currently i have genrated urban mask for Thimphu using NDVI and NDBI. 
+Base image taken to generate mask is Landsat Collotion 2 Level 2 2021 January(Any imagery can be used).
+
+Paper Refered: Improving the normalized difference builtup index to map urban built-up areas using a
+semiautomatic segmentation approach
+
+2. supportVectorMachine.ipynb
+
+Based on builtup mask  generated above, I have trained  the model one Landsat imagery Collotion 2 Level 2. Using the model I have mapped the urban areas from Landsat 2021 Level 2 Collection 2 for Dec Thimphu 2021 to validate model.
+
+
+
+Notes: There is always the point for importment with resoultion of the satellite data and ground validation
+
