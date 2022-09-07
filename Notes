@@ -33,6 +33,8 @@ Based on ground truth  it is import to generate mask of urban area.
 Currently i have genrated urban mask for Thimphu using NDVI and NDBI. 
 Base image taken to generate mask is Landsat Collotion 2 Level 2 2021 January(Any imagery can be used).
 
+Notes: Cleaning of mask based on ground validation will always improve the result
+
 Paper Refered: Improving the normalized difference builtup index to map urban built-up areas using a
 semiautomatic segmentation approach
 
